@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-27T02:21:24.567Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3731000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Signup with valid info",
+        "description": "",
+        "id": "sign-up;signup-with-valid-info",
+        "after": [
+          {
+            "result": {
+              "duration": 841000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I\u0027m in hotels.com signup page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I fill out the email field",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I fill out the Password field",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I input First name and Last name",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on the create my account button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I will verify my account is created successfully",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Sign Up",
+    "description": "",
+    "id": "sign-up",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Test.feature",
+    "tags": []
+  }
+]

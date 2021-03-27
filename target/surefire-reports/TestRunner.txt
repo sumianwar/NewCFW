@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.373 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Signup with valid info", "Optional[Sign Up]"](1)  Time elapsed: 4.728 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step "I'm in hotels.com signup page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I'm in hotels.com signup page")
+public void i_m_in_hotels_com_signup_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
