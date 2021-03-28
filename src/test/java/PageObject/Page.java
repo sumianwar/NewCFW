@@ -1,6 +1,7 @@
 package PageObject;
 
 import base.Config;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class Page extends Config {
+    Faker faker = new Faker();
 
     public Page(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -28,7 +30,6 @@ public class Page extends Config {
     @FindBy(how = How.XPATH, using = "*[@id='main-content']/div/div/div[3]/div/h2")
     public WebElement YourMemberBenefits;
 
-
     public void goToSignupPage() {
         String getCurrentUrl = driver.getCurrentUrl();
         // String signupPageUrl = getCurrentUrl + "home/signup";
@@ -38,30 +39,30 @@ public class Page extends Config {
 
     public void Email() {
 
-        email.sendKeys("sumicute2@yahoo.com");
+        email.sendKeys(faker.internet().safeEmailAddress());
     }
 
     public void Password() {
 
-        password.sendKeys("Tanvir12");
+        password.sendKeys("test1234$");
     }
 
     public void FirstName() {
 
-        firstName.sendKeys("mousumi");
+        firstName.sendKeys(faker.name().firstName());
+
     }
 
     public void LastName() {
 
-        lastName.sendKeys("anwar");
+        lastName.sendKeys(faker.name().lastName());
     }
 
     public void CreateMyAccount() {
 
         createMyAccount.click();
+
     }
-
-
     public void YourMemberBenefits() {
         String expected = "Your member benefits ";
         String actual = YourMemberBenefits.getText();
